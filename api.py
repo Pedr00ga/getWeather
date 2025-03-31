@@ -3,7 +3,7 @@ import requests
 
 #Cria função para adquirir dados de latitude e longitude com base na cidade, estado e pais
 def get_city_coordinates():
-    API_KEY = "d835383cb049dcaa78831547190832f0" #Chave da API disponibilizada no site
+    API_KEY = "SUA API KEY" #Chave da API disponibilizada no site
     BASE_URL = "http://api.openweathermap.org/geo/1.0/direct" #url da API
 
     #Recebe dados do usuário
@@ -44,7 +44,7 @@ def get_city_coordinates():
 
 #Cria função para buscar dados do clima com base na latitude e longitude
 def get_weather(lat, lon):
-    API_KEY = "111df47a94599253b4eb10c1bcdd5188" #chave da API
+    API_KEY = "SUA API KEY" #chave da API
     url = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API_KEY}&units=metric&lang=pt_br" #URL da API
 
     #Envia uma requisição HTTP para a API com base no URL montado anteriormente
