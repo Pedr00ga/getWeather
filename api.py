@@ -36,7 +36,7 @@ def get_city_coordinates():
             return lat, lon #retorna latitude e longite
         else:
             print("Nenhum local encontrado. Verifique os dados e tente novamente.")
-            return None, None
+            return None, None #Trata os erros
     else:
         print(f"Erro na requisição: {response.status_code} - {response.text}")
         return None, None
